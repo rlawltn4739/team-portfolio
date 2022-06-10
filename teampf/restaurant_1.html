@@ -1,0 +1,213 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <script src="script/indexJQuary.js"></script>
+    <link rel="stylesheet" href="css/myCSS.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo/logoYellow.png" />
+    
+
+    <title>함께먹는 즐거움 다같이</title>
+    
+  </head>
+
+  <body>
+   <div id="wrapper">
+
+    <!-- ************** nav ************** -->
+    <header class="nav_shadow fixed-top yuniverse d-flex bg-green">
+      <nav class="navbar navbar-expand-md navbar-light ">
+        <div id="logo_wrap">
+          <a href="index.html"><img id="logo" src="img/logo/logoGrey.png" alt=""></a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto nav_wrap ">
+            <li class="nav-item align-self-center ml-4">
+              <a class="nav-link  f-c-b" href="showall.html">둘러보기 <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item align-self-center ml-4">
+              <a class="nav-link  f-c-b" href="event.html">이벤트</a>
+            </li>
+            <li class="nav-item align-self-center ml-4">
+              <a class="nav-link  f-c-b" href="qna.html">고객문의</a>
+            </li>
+            <li class="nav-item align-self-center ml-4">
+              <a class="nav-link  f-c-b" href="join.html">입점문의</a>
+            </li>
+
+            <li class="nav-item ml-auto align-self-end">
+
+
+              <div id="loginlink" class="d-flex ml-auto login_wrap ">
+
+                <div class=" d-flex">
+                  <a href="login.html" class="align-self-center nav-link">
+                    <img id="lock-ic" src="img/icon/lock.png" alt="">
+                    <span class="f-c-b">login</span>
+                  </a>
+                </div>
+
+                <div class=" d-flex ml-2">
+                  <a href="signup.html" class="align-self-center nav-link">
+                    <img id="sign-ic" src="img/icon/sign.png" alt="">
+                    <span class="f-c-b">sign up</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <article>
+
+      <!-- *****************식당이름 점보트론***************** -->
+      <div class="jumbotron bg-green my-10 fl text-center">
+        <div class="container">
+          <h1 class="display-3 font-weight-bold">삼청각</h1>
+          <br>
+          <h6>한식</h6>
+          <br>
+          <hr class="hrLight">
+          <br>
+          <a type="button" class="btn" data-toggle="modal" data-target="#staticBackdrop" id="modal_opne_btn">
+            <h3 class="fl c-ls3 c-hoverB"> 예약 </h3>
+          </a>
+        </div>
+        <br>
+      </div>
+
+      <!-- *****************모달***************** -->
+      <section id class="booking text-left fl mb-5">
+        <a id="modal_close_btn" class="button btn c-btnBorderLight fl c-hoverY rounded-circle" >X</a>
+        <form action="reservation.php" method="post">
+          <h3 class="text-center">삼청각 예약하기</h3>
+          <div class="elem-group minsans pt-5">
+            <label for="name" class="minsans">이름</label>
+            <input type="text" id="name" name="visitor_name" placeholder="홍길동" required>
+          </div>
+          <div class="elem-group minsans">
+            <label for="email" class="minsans">E-mail</label>
+            <input type="email" id="email" name="visitor_email" placeholder="hgd@email.com" required>
+          </div>
+          <div class="elem-group minsans">
+            <label for="phone" class="minsans">핸드폰 번호</label>
+            <input type="tel" id="phone" name="visitor_phone" placeholder="010-1234-1234" pattern=(\d{3})-?\s?(\d{4})-?\s?(\d{4}) required>
+          </div>
+          <hr>
+          <div class="elem-group inlined minsans">
+            <label for="adult" class="minsans">성인</label>
+            <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+          </div>
+          <div class="elem-group inlined minsans">
+            <label for="child" class="minsans">소아</label>
+            <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+          </div>
+          <div class="elem-group minsans">
+            <label for="checkin-date" class="minsans">예약일 선택</label>
+            <input type="date" id="checkin-date" name="checkin" required>
+          </div>
+          <hr>
+          <div class="elem-group minsans">
+            <label for="message" class="minsans">요청사항</label>
+            <textarea id="message" name="visitor_message" placeholder="저희가 미리 알아야 할 사항이 있다면 알려주세요. ex) 견과류 알러지가 있어요." required></textarea>
+          </div>
+          <a type="submit" class="submit minsans c-btnBorderLight text-decoration-none pt-2 pl-2 pr-2 fl c-hoverY">예약하기</a>
+        </form>
+      </section>
+
+      <!-- *****************상세내용 점보트론***************** -->
+      <div class="col-lg-10 mb-20 float-right pr-0 rounded-0">
+        <div class="jumbotron bg-beige fb text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="img/restaurant/restaurant_1.jpg" alt="" class="img-fluid">
+                <div class="bg-yellow py-2 mt-3 rounded-left"></div>
+              </div>
+              <div class="col-lg-6 my-5 pt-5 pl-5 pr-5">
+               <h6 class="minsans text-justify c-lh2">정통 한식 문화를 전하기 위해 40년간 정통 한식만을 고집해 온 주방장의 정성스러운 손길을 느끼실 수 있습니다.<br><br>정갈한 전통 한식과 함께 한국적인 서비스를 만나실 수 있는 삼청각 한식당은 일화당 1층에 위치하고 있으며, 전망 좋은 룸과, <span class="font-weight-bold minsans">다양한 규모의 5개 별채</span>가 준비되어 특별한 정찬을 즐기시기에 적합합니다.<br><br> 삼청각 전통 한식당, 그 이름만큼이나 전통적인 맛과 서비스의 세계로 여러분을 초대합니다. <br><br> 삼청각 한식당에서 고품격 정통 한식 문화를 만나보십시오.</h6>
+               <br>
+               <hr class="col-4 hrDark float-right">
+               <br><br><br>
+             </div>
+           </div>
+
+           <div class="row">
+             <div class="col-lg-6 my-10 pt-5 pl-5 pr-5">
+              <h4 class="text-left">위치</h4>
+              <br>
+              <h5 class="text-left minsans">삼청각 일화당 1층</h5>
+              <br>
+              <h4 class="text-left mt-5">문의</h4>
+              <br>
+              <h5 class="text-left minsans">02-765-3700</h5>
+              <br><br>
+              <a href="http://www.samcheonggak.or.kr/dining/restaurant/" class="fb text-decoration-none c-hoverG float-left" target="blank">삼청각 홈페이지 바로가기</a>
+              <hr class="col-5 hrDark float-right">
+              <br><br><br>
+
+            </div>
+            <div class="col-lg-6 mt-5 mb-10">
+             <img src="img/restaurant/restaurant_1-2.jpg" alt="" class="img-fluid">
+             <div class="bg-yellow py-2 mt-3 rounded-right"></div>
+           </div>
+         </div>
+
+         <div class="row my-10 mb-10">
+           <div class="col-lg-6">
+            <h5 class="text-left">오시는 길</h5>
+            <iframe
+            width="100%"
+            height="450"
+            style="box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.7); border: none;"
+            loading="lazy"
+            allowfullscreen
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCO7kBa8UyQQU7NCZWfAJuUufc30kkZzbs
+            &q=삼청각">
+          </iframe>
+        </div>
+        <div class="col-lg-6">
+         <h1>빅데이터 관련</h1>
+       </div>
+     </div>
+
+   </div>
+ </div>
+</div>
+</article>
+
+<!-- ************** footer ************** -->
+<footer class="d-flex bg-grey">
+  <div id="copy_wrap" class="align-self-center text-center">
+    <br>
+    <span>경기 수원시 팔달구 매산로 12-1/ 2층, 3층, 4층</span>
+    <span>2조 김지수 , 황연수 ,정은서</span> <br> <br>
+    <span>© dge. All Rights Reserved</span>
+  </div>
+</footer>
+
+</div><!-- wrapperEND -->
+
+
+
+
+</body>
+</html>

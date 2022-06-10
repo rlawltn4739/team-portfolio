@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.booking{
+			width: 500px;
+			margin: 0 auto;
+			padding: 50px;
+		}
+		.booking div.elem-group {
+			margin: 20px 0;
+		}
+
+		.booking div.elem-group.inlined {
+			width: 49%;
+			display: inline-block;
+			float: left;
+			margin-left: 1%;
+		}
+
+		.booking label {
+			display: block;
+			font-family: 'Nanum Gothic';
+			padding-bottom: 10px;
+			font-size: 1.25em;
+		}
+
+		.booking input, select, textarea {
+			border-radius: 2px;
+			border: 2px solid #777;
+			box-sizing: border-box;
+			font-size: 1.25em;
+			font-family: 'Nanum Gothic';
+			width: 100%;
+			padding: 10px;
+		}
+
+		.booking div.elem-group.inlined input {
+			width: 95%;
+			display: inline-block;
+		}
+
+		.booking textarea {
+			height: 250px;
+		}
+
+		.booking hr {
+			border: 1px dotted #ccc;
+		}
+
+		.booking button {
+			height: 50px;
+			background: orange;
+			border: none;
+			color: white;
+			font-size: 1.25em;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<!-- Modal -->
+	<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Understood</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

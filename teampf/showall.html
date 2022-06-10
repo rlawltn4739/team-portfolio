@@ -1,0 +1,346 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+    <!-- myScript -->
+    <script src="script/indexJQuary.js"></script>
+    <link rel="stylesheet" href="css/myCSS.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo/logoYellow.png" />
+    
+
+    <title>함께먹는 즐거움 다같이</title>
+    
+  </head>
+
+  <body>
+   <div id="wrapper">
+
+    <!-- ************** nav ************** -->
+    <header class="nav_shadow fixed-top yuniverse d-flex bg-green">
+      <nav class="navbar navbar-expand-md navbar-light ">
+        <div id="logo_wrap">
+          <a href="index.html"><img id="logo" src="img/logo/logoGrey.png" alt=""></a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto nav_wrap ">
+            <li class="nav-item align-self-center ml-4">
+              <a class="nav-link  f-c-b" href="showall.html">둘러보기 <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item align-self-center ml-4">
+              <a class="nav-link  f-c-b" href="event.html">이벤트</a>
+            </li>
+            <li class="nav-item align-self-center ml-4">
+              <a class="nav-link  f-c-b" href="qna.html">고객문의</a>
+            </li>
+            <li class="nav-item align-self-center ml-4">
+              <a class="nav-link  f-c-b" href="join.html">입점문의</a>
+            </li>
+
+            <li class="nav-item ml-auto align-self-end">
+
+
+              <div id="loginlink" class="d-flex ml-auto login_wrap ">
+
+                <div class=" d-flex">
+                  <a href="login.html" class="align-self-center nav-link">
+                    <img id="lock-ic" src="img/icon/lock.png" alt="">
+                    <span class="f-c-b">login</span>
+                  </a>
+                </div>
+
+                <div class=" d-flex ml-2">
+                  <a href="signup.html" class="align-self-center nav-link">
+                    <img id="sign-ic" src="img/icon/sign.png" alt="">
+                    <span class="f-c-b">sign up</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <article>
+      <section>
+        <!-- *****************title 점보트론***************** -->
+        <div class="jumbotron bg-green mt-10 fl">
+          <div class="container">
+            <h1 class="display-3 font-weight-bold mt-5">둘러보기</h1>
+            <hr class="hrLight">
+          </div>
+          <section>
+            <div class=" container">
+              <div class="row button-group filters-button-group float-left">
+                <a class="btn fl active wBtn filter_all c-hoverY c-btnBorderLight rounded-pill">ALL</a>
+              </div>
+              <div class="row button-group filters-button-group float-left ml-4">
+                <a class="btn fl wBtn filter_kor c-hoverY c-btnBorderLight rounded-pill">한식</a>
+              </div>
+              <div class="row button-group filters-button-group float-left ml-4">
+                <a class="btn fl wBtn filter_cn c-hoverY c-btnBorderLight rounded-pill">중식</a>
+              </div>
+              <div class="row button-group filters-button-group float-left ml-4">
+                <a class="btn fl wBtn filter_jp c-hoverY c-btnBorderLight rounded-pill">일식</a>
+              </div>
+              <div class="row button-group filters-button-group float-left ml-4">
+                <a class="btn fl wBtn filter_us c-hoverY c-btnBorderLight rounded-pill">양식</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <br><br>
+
+
+      <!-- *****************식당 둘러보기***************** -->
+      <section>
+        <div class="container">
+          <h5 class="minsans fl">로고를 클릭하면 해당 식당의 상세페이지로 이동합니다.</h5>
+          <div class="row bg-beige mb-10 p-5 text-center">
+            <div class="col-lg-10">
+              <div class="bg-yellow py-2 ml-10 mb-4 rounded-right"></div>
+            </div>
+            <div class="col-lg-4 p-5 kor">
+              <a href="restaurant_1.html" class="fb text-decoration-none c-hoverG bigger">
+                <div style="height:74px" class="d-flex justify-content-center">
+                  <img src="img/logo/r_logo1.jpg" alt="" class="img-fluid align-self-center" style="height:37px;">
+                </div>
+                <br><br>
+                <h5>삼청각</h5>
+                <p class="minsans fs">고즈넉한 자연과 한옥에서 즐기는 <br>정갈한 전통 한식</p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 p-5 kor">
+              <a href="restaurant_2.html" class="fb text-decoration-none c-hoverG bigger">
+                <div style="height:74px" class="d-flex justify-content-center">
+                  <img src="img/logo/r_logo2.png" alt="" class="img-fluid">
+                </div>
+                <br><br>
+                <h5>지화자</h5>
+                <p class="minsans fs">오직 왕을 위해 올렸던 정통 궁중음식 <br> " 지화자 "에서 재현됩니다.</p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 p-5 kor">
+              <a href="restaurant_3.html" class="fb text-decoration-none c-hoverG bigger">
+                <div style="height:74px" class="d-flex justify-content-center">
+                  <img src="img/logo/r_logo3.png" alt="" class="img-fluid">
+                </div>
+                <br><br>
+                <h5>수담</h5>
+                <p class="minsans fs">공간의 가치를 담은 건강한 '맛의 쉼터' <br> 강남 NO.1 고급한정식</p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 p-5 cn">
+              <a href="restaurant_4.html" class="fb text-decoration-none c-hoverG bigger">
+                <div style="height:74px" class="d-flex justify-content-center">
+                  <img src="img/logo/r_logo4.png" alt="" class="img-fluid align-self-center" style="height:52px;">
+                </div>
+                <br><br>
+                <h5>인량훠궈</h5>
+                <p class="minsans fs">대한민국 최초의 중국 운남성 전통음식 <br>가물치훠궈 전문점<br></p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 p-5 kor">
+              <a href="restaurant_5.html" class="fb text-decoration-none c-hoverG bigger">
+                <div style="height:74px" class="d-flex justify-content-center">
+                  <img src="img/logo/r_logo5.png" alt="" class="img-fluid align-self-center">
+                </div>
+                <br><br>
+                <h5>암소서울</h5>
+                <p class="minsans fs">한양을 대표했던 음식 중에서 미식을 즐긴 <br> 양반, 사대부 종가 가문의 메뉴 재현</p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 p-5 us">
+              <a href="restaurant_6.html" class="fb text-decoration-none c-hoverG bigger">
+                <div style="height:74px" class="d-flex justify-content-center">
+                  <img src="img/logo/r_logo6.png" alt="" class="img-fluid align-self-center" style="height:65px;">
+                </div>
+                <br><br>
+                <h5>울프강 스테이크 하우스</h5>
+                <p class="minsans fs">최고급 소고기 블랙 앵거스 품종만 사용한 <br>드라이에이징 스테이크를 경험하세요.</p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 p-5 cn">
+              <a href="restaurant_7.html" class="fb text-decoration-none c-hoverG bigger">
+                <div style="height:74px" class="d-flex justify-content-center">
+                  <img src="img/logo/r_logo7.png" alt="" class="img-fluid align-self-center">
+                </div>
+                <br><br>
+                <h5>백리향</h5>
+                <p class="minsans fs">대한민국 대표 고품격 중식 파인 다이닝 <br> 중식의 원형의 맛 그대로 선사합니다.</p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 p-5 jp">
+              <a href="restaurant_8.html" class="fb text-decoration-none c-hoverG bigger">
+                <div style="height:74px" class="d-flex justify-content-center">
+                  <img src="img/logo/r_logo8.png" alt="" class="img-fluid align-self-center">
+                </div>
+                <br><br>
+                <h5>아카사카</h5>
+                <p class="minsans fs">고품격 일식 코스요리 전문점, 아카사카</p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 p-5 kor">
+              <a href="restaurant_9.html" class="fb text-decoration-none c-hoverG bigger">
+                <div style="height:74px" class="d-flex justify-content-center">
+                  <img src="img/logo/r_logo9.png" alt="" class="img-fluid align-self-center">
+                </div>
+                <br><br>
+                <h5>버드나무집</h5>
+                <p class="minsans fs">장인의 손길로 이루어낸 전통의 맛 <br> 세계가 인정한 명품갈비</p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 p-5 us">
+              <a href="restaurant_10.html" class="fb text-decoration-none c-hoverG bigger">
+                <div style="height:74px" class="d-flex justify-content-center">
+                  <img src="img/logo/r_logo10.png" alt="" class="img-fluid align-self-center">
+                </div>
+                <br><br>
+                <h5>도우룸</h5>
+                <p class="minsans fs">스와니예 철학으로 만든 생면 파스타<br>직접 손성형해 만드는 생면 파스타</p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 p-5 kor">
+              <a href="restaurant_11.html" class="fb text-decoration-none c-hoverG bigger">
+                <div style="height:74px" class="d-flex justify-content-center">
+                  <img src="img/logo/r_logo11.png" alt="" class="img-fluid align-self-center">
+                </div>
+                <br><br>
+                <h5>보름쇠</h5>
+                <p class="minsans fs">제주 흑우 전문점<br>직접 운영하는 제주도 농장에서 고기 공수</p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 p-5 kor">
+              <a href="restaurant_12.html" class="fb text-decoration-none c-hoverG bigger">
+                <div style="height:74px" class="d-flex justify-content-center">
+                  <img src="img/logo/r_logo12.png" alt="" class="img-fluid align-self-center" style="height:51px;">
+                </div>
+                <br><br>
+                <h5>곰바위</h5>
+                <p class="minsans fs">30년 전통 양, 대창 전문점<br>대창의 특별한 맛과 한우의 참맛</p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 p-5 kor">
+              <a href="restaurant_13.html" class="fb text-decoration-none c-hoverG bigger">
+                <div style="height:74px" class="d-flex justify-content-center">
+                  <img src="img/logo/r_logo13.png" alt="" class="img-fluid align-self-center">
+                </div>
+                <br><br>
+                <h5>가온</h5>
+                <p class="minsans fs">수준 높은 의식주 문화어 어우러지는<br>최고의 한식</p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 p-5 us">
+              <a href="restaurant_14.html" class="fb text-decoration-none c-hoverG bigger">
+                <div style="height:74px" class="d-flex justify-content-center">
+                  <img src="img/logo/r_logo14.png" alt="" class="img-fluid align-self-center">
+                </div>
+                <br><br>
+                <h5>볼트 스테이크 하우스</h5>
+                <p class="minsans fs">스테이크 본고장 미국이 인정한 <br>스테이크 와인과 볼트의 스페셜 비버리지</p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 p-5 kor">
+              <a href="restaurant_15.html" class="fb text-decoration-none c-hoverG bigger">
+                <div style="height:74px" class="d-flex justify-content-center">
+                  <img src="img/logo/r_logo15.png" alt="" class="img-fluid align-self-center" style="height:15px;">
+                </div>
+                <br><br>
+                <h5>정식당</h5>
+                <p class="minsans fs">전통한식의 친숙한 한식재료를 이용해 <br>획기적으로 재탄생시킨 뉴코리안</p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 p-5 us">
+              <a href="restaurant_16.html" class="fb text-decoration-none c-hoverG bigger">
+                <div style="height:74px" class="d-flex justify-content-center">
+                  <img src="img/logo/r_logo16.png" alt="" class="img-fluid align-self-center">
+                </div>
+                <br><br>
+                <h5>텅앤그루브</h5>
+                <p class="minsans fs">이태리 숙성 고기 전문점, 입안의 즐거운  <br> 리듬이 완벽한 결합으로 느껴지는곳</p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 p-5 kor">
+              <a href="restaurant_17.html" class="fb text-decoration-none c-hoverG bigger">
+                <div style="height:74px" class="d-flex justify-content-center">
+                  <img src="img/logo/r_logo17.png" alt="" class="img-fluid align-self-center">
+                </div>
+                <br><br>
+                <h5>모수서울</h5>
+                <p class="minsans fs">샌프란시스코에서 시작된 <br> 안성재 셰프만의 특별한 아시아 요리</p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 p-5 cn">
+              <a href="restaurant_18.html" class="fb text-decoration-none c-hoverG bigger">
+                <div style="height:74px" class="d-flex justify-content-center">
+                  <img src="img/logo/r_logo18.png" alt="" class="img-fluid align-self-center" style="height:44px;">
+                </div>
+                <br><br>
+                <h5>크리스탈 제이드</h5>
+                <p class="minsans fs">아시아 태평양 등 전 세계에서 운영되는 <br>글로벌 차이니즈 레스토랑 브랜드</p>
+              </a>
+          </div>
+          <div class="col-lg-10">
+            <div class="bg-yellow py-2 ml-10 mt-2 rounded-left"></div>
+          </div>
+        </div>
+        </div>
+      </section>
+      
+    </article>
+    
+
+
+    <!-- ************** footer ************** -->
+    <footer class="d-flex bg-grey">
+      <div id="copy_wrap" class="align-self-center text-center">
+        <br>
+        <span>경기 수원시 팔달구 매산로 12-1/ 2층, 3층, 4층</span>
+        <span>2조 김지수 , 황연수 ,정은서</span> <br> <br>
+        <span>© dge. All Rights Reserved</span>
+      </div>
+    </footer>
+
+  </div><!-- wrapperEND -->
+
+
+
+
+</body>
+</html>

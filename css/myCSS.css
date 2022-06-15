@@ -570,10 +570,10 @@ footer{
 }
 .tda{
   text-decoration: none;
-  color: black;
+  
 }
 .tda:hover{
-  color: white;
+  color: #dad7d2;
   text-decoration: none !important;
-
+  font-weight: bolder;
 }

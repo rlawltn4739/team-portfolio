@@ -25,10 +25,10 @@ html,body{
   background-color: #485e57;
 }
 .yuniverse{/*타이틀 폰트*/
-font-family: 'YUniverse-B';
+  font-family: 'YUniverse-B';
 }
 .minsans{/*내용폰트*/
-font-family: 'MinSans-Light';
+  font-family: 'MinSans-Light';
 }
 .m-trans{
   margin-left: 5% !important;
@@ -190,7 +190,7 @@ footer{
 }
 .bg-beige{
   background-color: #e4ddc2
-;
+  ;
 }
 .fy{
   color: #e9bd7c;
@@ -288,7 +288,6 @@ footer{
 
 .fsb{
   font-size: 23px;
-  
 }
 
 /*그래프*/
@@ -365,15 +364,12 @@ footer{
   opacity: 0;
 }
 
+#waypoint2{
+  opacity: 0;
+}
 
-
-
-
-
-
-/*---------------------*/
 #card_wrap{
-  
+
   width: 100%;
   max-width: 1080px;
   margin: 67px auto;
@@ -430,24 +426,145 @@ footer{
 }
 .carousel-inner img{
 
-  
+
 }
 #login_jt{
-  
+
   margin-top:100px;
   /*margin-bottom: 156px;
 */}
 
-#log_wrap{
-  width: 500px;
-  margin: 67px auto;
-}
-.dropdown-item:hover{
-  background-color: #485e57;
+  #log_wrap{
+    width: 500px;
+    margin: 67px auto;
+  }
+  .dropdown-item:hover{
+    background-color: #485e57;
+  }
+
+  #success_message{ display: none;}
+
+  .darkFilter{
+    filter: brightness(40%);
+  }
+
+  .privacy{
+    background: white;
+    width: auto;
+    height: 290px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .checkbox-radio{
+    position: relative;
+  }
+  .agree{
+    position: relative;
+    left: 17px;
+  }
+  .checkbox-radio label:before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: solid 1px #E4E4E4;
+    background: white;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+  }
+  .checkbox-radio input[type="checkbox"]:checked+label:after{
+    content: "";
+    background: #485e57;
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 14px;
+    height: 14px;
+    box-sizing: border-box;
+  }
+  .submitA{
+    background-color: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    border-bottom: 1px solid #BFBFBF;
+    display: block;
+  }
+
+  .c-btn-dark{
+    border-radius: 0;
+    background-color: #485e57;
+    text-align: center;
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+/*성별 차트*/
+.circle-chart-container {
+  clear: left;
+  float: left;
+  position: relative;
+  max-width: 265px;
+  width: 100%;
 }
 
-#success_message{ display: none;}
+.circle-chart {
+  overflow: visible;
+}
 
-.darkFilter{
-  filter: brightness(40%);
+.circle-chart-circle {
+  animation: circle-chart-fill 1.35s reverse;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.circle-chart-two {
+  left: 6%;
+  max-width: 88%;
+  position: absolute;
+  top: 6%;
+}
+
+.circle-chart-percentage {
+  -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+  -moz-animation: fade-in-text 2.2s 0.1s forwards;
+  animation: fade-in-text 2.2s 0.1s forwards;
+  font-size: 22px;
+  font-weight: 700;
+  position: absolute;
+}
+
+.circle-chart-one-percentage {
+  color: #e4ddc2;
+  left: 130px;
+  top: 110px;
+}
+
+.circle-chart-two-percentage {
+  color: #e9bd7c;
+  left: 50px;
+  top: 160px;
+}
+
+@keyframes circle-chart-fill {
+  to { stroke-dasharray: 0 100; }
+}
+
+.ml-6{
+  margin-left: 6rem;
+}
+.c-ml-5{
+  margin-left: 5rem;
+}
+.c-ml-4{
+  margin-left: 4rem;
 }

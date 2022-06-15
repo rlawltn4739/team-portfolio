@@ -29,7 +29,7 @@
     <header class="nav_shadow fixed-top yuniverse d-flex bg-green">
       <nav class="navbar navbar-expand-md navbar-light ">
         <div id="logo_wrap">
-          <a href="index.html"><img id="logo" src="img/logo/logoGrey.png" alt=""></a>
+          <a href="index"><img id="logo" src="img/logo/logoGrey.png" alt=""></a>
         </div>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,16 +39,16 @@
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto nav_wrap ">
             <li class="nav-item align-self-center ml-4">
-              <a class="nav-link  f-c-b" href="showall.html">둘러보기 <span class="sr-only"></span></a>
+              <a class="nav-link  f-c-b" href="showall">둘러보기 <span class="sr-only"></span></a>
             </li>
             <li class="nav-item align-self-center ml-4">
-              <a class="nav-link  f-c-b" href="event.html">이벤트</a>
+              <a class="nav-link  f-c-b" href="event">이벤트</a>
             </li>
             <li class="nav-item align-self-center ml-4">
-              <a class="nav-link  f-c-b" href="qna.html">고객문의</a>
+              <a class="nav-link  f-c-b" href="qna">고객문의</a>
             </li>
             <li class="nav-item align-self-center ml-4">
-              <a class="nav-link  f-c-b" href="join.html">입점문의</a>
+              <a class="nav-link  f-c-b" href="join">입점문의</a>
             </li>
 
             <li class="nav-item ml-auto align-self-end">
@@ -57,14 +57,14 @@
               <div id="loginlink" class="d-flex ml-auto login_wrap ">
 
                 <div class=" d-flex">
-                  <a href="login.html" class="align-self-center nav-link">
+                  <a href="login" class="align-self-center nav-link">
                     <img id="lock-ic" src="img/icon/lock.png" alt="">
                     <span class="f-c-b">login</span>
                   </a>
                 </div>
 
                 <div class=" d-flex ml-2">
-                  <a href="signup.html" class="align-self-center nav-link">
+                  <a href="signup" class="align-self-center nav-link">
                     <img id="sign-ic" src="img/icon/sign.png" alt="">
                     <span class="f-c-b">sign up</span>
                   </a>
@@ -75,57 +75,44 @@
         </div>
       </nav>
     </header>
-
-    <div class="jumbotron bg-green mt-10 fl">
-      <div class="container">
-        <h1 class="display-3 font-weight-bold mt-10">이벤트</h1>
-        <hr class="hrLight">
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-
-        <div class="col col-lg-6">
-          <a href="event3.html" class="text-decoration-none fb c-hoverG">
-            <div class="card" style="border: none;">
-              <img src="img/event/event3.jpg" class="card-img-top rounded-0" alt="..." style="border: none;">
-              <div class="card-body bg-beige">
-                <p class="card-text minsans font-weight-bold text-center">6월, 특별한 할인을 제공하는 식당들을 만나보세요.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col col-lg-6">
-          <a href="event2.html" class="text-decoration-none fb c-hoverG">
-            <div class="card" style="border: none;">
-              <img src="img/event/event2.jpg" class="card-img-top rounded-0" alt="..." style="border: none;">
-              <div class="card-body bg-beige">
-                <p class="card-text minsans font-weight-bold text-center">다같이를 꾸준히 이용해주시는 고객님들께 드리는 선물</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col col-lg-6 mt-10">
-          <a href="event1.html" class="text-decoration-none fb c-hoverG">
-            <div class="card" style="border: none;">
-              <img src="img/event/event1.jpg" class="card-img-top rounded-0" alt="..." style="border: none;">
-              <div class="card-body bg-beige">
-                <p class="card-text minsans font-weight-bold text-center">다같이에 오신 것을 환영합니다.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-      </div>
-    </div>
     
+    <article>
 
+
+      <div class="container">
+        <div class="jumbotron bg-green fl" id="login_jt">
+          <div id="log_wrap">
+            <form class="px-4 py-3">
+            <div class="form-group">
+              <label for="username">아이디</label>
+              <input  class="form-control" id="username" placeholder="아이디">
+            </div>
+            <div class="form-group">
+              <label for="password">비밀번호</label>
+              <input type="password" class="form-control" id="password" placeholder="비밀번호">
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                <label class="form-check-label" for="dropdownCheck">
+                  아이디 기억
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn c-btnBorderLight c-hoverY fl">로그인</button>
+          </form>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item fl c-hoverY" href="signup">회원가입</a>
+          <a class="dropdown-item fl c-hoverY" href="#">비밀번호찾기</a>
+          </div>
+        </div>
+
+      </div>
+
+    </article>
 
     <!-- ************** footer ************** -->
-    <footer class="d-flex bg-grey mt-20">
+    <footer class="d-flex bg-grey">
       <div id="copy_wrap" class="align-self-center text-center">
         <br>
         <span>경기 수원시 팔달구 매산로 12-1/ 2층, 3층, 4층</span>

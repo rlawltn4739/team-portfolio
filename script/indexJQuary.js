@@ -75,6 +75,10 @@ $(function(){
     $('#waypoint').addClass('animate__fadeIn');
   }, {offset: '83%'});
 
+  $('#waypoint2').waypoint(function(){
+    $('#waypoint2').addClass('animate__fadeIn');
+  }, {offset: '60%'});
+
   var top5=$('.top5')
   var top4=$('.top4')
   var top3=$('.top3')
@@ -129,4 +133,6 @@ $(function(){
     top2_1.hide();
   })
 
+
+ 
 })

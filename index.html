@@ -22,6 +22,7 @@
     
 
     <title>함께먹는 즐거움 다같이</title>
+
     
   </head>
 
@@ -131,7 +132,7 @@
         <div class="row">
           <div class="col-12">
             <div id="map_wrap">
-              <h1 class="fl mb-5"> 내근처 식당 보기</h1>
+              <h1 class="fl mb-5"> 내근처 식당 보기<br><span class="minsans fs">마커를 클릭하시면 해당 식당의 상세페이지로 이동할 수 있습니다.</span></h1>
               <iframe src="식당.html" width="100%" height="550"></iframe>
             </div>
           </div>
@@ -213,7 +214,7 @@
 
           <div id="waypoint" class="animate__animated"> 
             <div class="zt-skill-bar top5">
-              <div data-width="36" style=";" class="minsans bg-yellow fb">
+              <div data-width="36"  class="minsans bg-yellow fb">
                 삼청각
                 <span class="minsans fl hide">26건</span>
               </div>
@@ -229,7 +230,7 @@
             <br>
 
             <div class="zt-skill-bar top4">
-              <div data-width="37" style=";" class="minsans bg-grey fb">
+              <div data-width="37"  class="minsans bg-grey fb">
                 암소서울
                 <span class="minsans fl">27건</span>
               </div>
@@ -245,7 +246,7 @@
             <br>
 
             <div class="zt-skill-bar top3">
-              <div data-width="48" style=";" class="minsans bg-yellow fb">
+              <div data-width="48"  class="minsans bg-yellow fb">
                 곰바위
                 <span class="minsans fl">33건</span>
               </div>
@@ -261,7 +262,7 @@
             <br>
 
             <div class="zt-skill-bar top2">
-              <div data-width="39" style=";" class="minsans bg-grey fb">
+              <div data-width="39" style="" class="minsans bg-grey fb">
                 정식당
                 <span class="minsans fl">29건</span>
               </div>
@@ -277,7 +278,7 @@
             <br>
 
             <div class="zt-skill-bar top1">
-              <div data-width="58" style=";" class="minsans bg-yellow fb">
+              <div data-width="58" style="" class="minsans bg-yellow fb">
                 텅앤그루브
                 <span class="minsans fl">38건</span>
               </div>
@@ -290,6 +291,134 @@
               </div>
             </a>
           </div>
+        </div>
+      </div>
+
+      <div class="container mt-10">
+        <hr class="col-12 hrLight">
+      </div>
+
+      <!-- **************성별 그래프************** -->
+      <div class="container">
+
+        <h1 class="fl mt-15 text-center">
+          성별 선호 식당 <br> <span class="minsans fs">각 그래프를 클릭하시면 해당 식당의 상세페이지로 이동합니다.</span>
+        </h1>
+        <br><br>
+        <div id="waypoint2" class="row content-justify-center mt-5 animate__animated">
+
+          <div class="col-lg-4 mb-5">
+            <a href="restaurant_1.html" class="text-decoration-none fl c-hoverY">
+              <h2 class="ml-6">삼청각</h2>
+              <section class="circle-chart-container mt-3 mb-6">
+                <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                  <circle stroke="#efefef" stroke-width=".5" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                  <circle class="circle-chart-circle" stroke="#e4ddc2" stroke-width="3" stroke-dasharray="59,700" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                </svg>
+                <span class="circle-chart-percentage circle-chart-one-percentage" style="color: #e9bd7c !important;">
+                 <span class="minsans fs font-weight-light fy">남성&nbsp;</span>40% 
+               </span>
+               <svg class="circle-chart circle-chart-two" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                <circle stroke="#efefef" stroke-width="0" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                <circle class="circle-chart-circle" stroke="#e9bd7c" stroke-width="3" stroke-dasharray="39,600" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+              </svg>
+              <span class="circle-chart-percentage circle-chart-two-percentage" style="color: #e4ddc2;">
+                <span class="minsans fs font-weight-light">여성&nbsp;</span>60%
+              </span>
+              </section>
+            </a>
+          </div>
+
+          <div class="col-lg-4 mb-5">
+            <a href="restaurant_5.html" class="text-decoration-none fl c-hoverY">
+              <h2 class="c-ml-5">암소서울</h2>
+              <section class="circle-chart-container mt-3 mb-6">
+                <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                  <circle stroke="#efefef" stroke-width=".5" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                  <circle class="circle-chart-circle" stroke="#e4ddc2" stroke-width="3" stroke-dasharray="66,600" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                </svg>
+                <span class="circle-chart-percentage circle-chart-one-percentage" style="color: #e9bd7c !important;">
+                  <span class="minsans fs font-weight-light fy">남성&nbsp;</span>33% 
+                </span>
+                <svg class="circle-chart circle-chart-two" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                  <circle stroke="#efefef" stroke-width="0" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                  <circle class="circle-chart-circle" stroke="#e9bd7c" stroke-width="3" stroke-dasharray="33,300" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                </svg>
+                <span class="circle-chart-percentage circle-chart-two-percentage" style="color: #e4ddc2;">
+                  <span class="minsans fs font-weight-light">여성&nbsp;</span>67%
+                </span>
+              </section>
+            </a>
+          </div>
+
+          <div class="col-lg-4 mb-5">
+            <a href="restaurant_12.html" class="text-decoration-none fl c-hoverY">
+              <h2 class="ml-6">곰바위</h2>
+              <section class="circle-chart-container mt-3 mb-6">
+                <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                  <circle stroke="#efefef" stroke-width=".5" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                  <circle class="circle-chart-circle" stroke="#e9bd7c" stroke-width="3" stroke-dasharray="71,400" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                </svg>
+                <span class="circle-chart-percentage circle-chart-one-percentage">
+                  28.5% <span class="minsans fs font-weight-light">여성&nbsp;</span>
+                </span>
+                <svg class="circle-chart circle-chart-two" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                  <circle stroke="#efefef" stroke-width="0" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                  <circle class="circle-chart-circle" stroke="#e4ddc2" stroke-width="3" stroke-dasharray="28,500" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                </svg>
+                <span class="circle-chart-percentage circle-chart-two-percentage">
+                  <span class="minsans fs font-weight-light">남성&nbsp;</span>71.4%
+                </span>
+              </section>
+            </a>
+          </div>
+
+          <div class="col-lg-2"></div>
+
+          <div class="col-lg-4 mb-5">
+            <a href="restaurant_15.html" class="text-decoration-none fl c-hoverY">
+              <h2 class="ml-6">정식당</h2>
+              <section class="circle-chart-container mt-3 mb-6">
+                <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                  <circle stroke="#efefef" stroke-width=".5" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                  <circle class="circle-chart-circle" stroke="#e9bd7c" stroke-width="3" stroke-dasharray="65,400" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                </svg>
+                <span class="circle-chart-percentage circle-chart-one-percentage">
+                 <span class="minsans fs font-weight-light">여성&nbsp;</span>35% 
+                </span>
+                <svg class="circle-chart circle-chart-two" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                  <circle stroke="#efefef" stroke-width="0" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                  <circle class="circle-chart-circle" stroke="#e4ddc2" stroke-width="3" stroke-dasharray="35,500" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                </svg>
+                <span class="circle-chart-percentage circle-chart-two-percentage">
+                  <span class="minsans fs font-weight-light">남성&nbsp;</span>65%
+                </span>
+              </section>
+            </a>
+          </div>
+
+          <div class="col-lg-4 mb-5">
+            <a href="restaurant_16.html" class="text-decoration-none fl c-hoverY">
+              <h2 class="c-ml-4">텅앤그루브</h2>
+              <section class="circle-chart-container mt-3 mb-6 c-hoverY">
+                <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                  <circle stroke="#efefef" stroke-width=".5" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                  <circle class="circle-chart-circle" stroke="#e4ddc2" stroke-width="3" stroke-dasharray="67,800" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                </svg>
+                <span class="circle-chart-percentage circle-chart-one-percentage" style="color: #e9bd7c !important;">
+                  <span class="minsans fs font-weight-light fy">남성&nbsp;</span>32% 
+                </span>
+                <svg class="circle-chart circle-chart-two" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                  <circle stroke="#efefef" stroke-width="0" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                  <circle class="circle-chart-circle" stroke="#e9bd7c" stroke-width="3" stroke-dasharray="31,900" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                </svg>
+                <span class="circle-chart-percentage circle-chart-two-percentage" style="color: #e4ddc2;">
+                  <span class="minsans fs font-weight-light">여성&nbsp;</span>68%
+                </span>
+              </section>
+            </a>
+          </div>
+          <div class="col-lg-2"></div>
         </div>
       </div>
 
@@ -352,6 +481,8 @@
                 <h6 class="lead minsans fl" style="line-height: 30px;">소중한 사람과 고마운 분들께 정성스러운 한끼를 대접하고 싶지않으신가요? <br>  다같이는 상견례, 모임 등에 최적화된 식당들을 선정해 어려운 검색 없이 고급스러운 식사를 즐기실 수 있게 도와드립니다. <br> 식당 선정부터 예약까지 모두 다같이를 통해 원스톱으로 즐겨보세요! <br><br> 더불어 회원가입을 하시면 특별한 혜택이 있으니 많은 관심 부탁드립니다.</h6>
               </div>
             </div>
+          </div>
+          <div class="row">
             <a class="btn fl c-hoverY text-decoration-none mt-5 c-btnBorderLight rounded-pill mx-auto" href="event.html" role="button">
               <h6 class="pt-2 pl-2 pr-2 font-weight-bold"> VIEW EVENT </h6>
             </a>

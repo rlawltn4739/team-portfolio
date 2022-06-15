@@ -4,10 +4,9 @@ from pandas import DataFrame
 from pandas import read_excel
 import matplotlib.pylab as plt
 
-df=read_excel("data/reservation.xlsx")
+df=pd.read_csv("data/reservation.csv")
 print(df)
 print("-"*25)
 
-#전처리
-df_r=df["식당"].value_counts()
-print(df_r)
+df.set_index("레스토랑", inplace=True)
+print(df)

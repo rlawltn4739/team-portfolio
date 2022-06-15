@@ -574,4 +574,5 @@ footer{
 }
 .tda:hover{
   color: white;
+  text-decoration: none;
 }
